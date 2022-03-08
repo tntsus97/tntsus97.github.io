@@ -44,10 +44,10 @@ function moveShooter(e) {
   squares[currentShooterIndex].classList.remove('shooter')
   switch(e.key) {
     case 'ArrowLeft':
-      if (currentShooterIndex % width !== 0) currentShooterIndex -=1
+      if (currentShooterIndex % width !== 0) currentShooterIndex -=2
       break
     case 'ArrowRight' :
-      if (currentShooterIndex % width < width -1) currentShooterIndex +=1
+      if (currentShooterIndex % width < width -2) currentShooterIndex +=2
       break
   }
   squares[currentShooterIndex].classList.add('shooter')
@@ -61,16 +61,16 @@ function moveInvaders() {
 
   if (rightEdge && goingRight) {
     for (let i = 0; i < alienInvaders.length; i++) {
-      alienInvaders[i] += width +1
-      direction = -1
+      alienInvaders[i] += width +2
+      direction = -2
       goingRight = false
     }
   }
 
   if(leftEdge && !goingRight) {
     for (let i = 0; i < alienInvaders.length; i++) {
-      alienInvaders[i] += width -1
-      direction = 1
+      alienInvaders[i] += width -2
+      direction = 2
       goingRight = true
     }
   }
