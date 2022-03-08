@@ -27,3 +27,8 @@
 .boom {
 	background-color: red;
 }
+.results{
+	text-decoration: wavy;
+	text-shadow: 1em;
+	text-rendering: optimizeLegibility;
+}
