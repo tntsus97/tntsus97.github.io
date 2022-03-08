@@ -4,6 +4,7 @@
   width: 140px;
   display: flex;
   flex-wrap: wrap;
+  background-color: aquamarine;
 }
 
 .grid div {
